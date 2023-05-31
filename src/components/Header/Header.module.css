@@ -1,0 +1,53 @@
+@import '../../styles/_var.module.css';
+
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 10rem 0 0;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.header > img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  border: 2px solid var(--background-secondary);
+}
+
+.header__content > p {
+  font-size: var(--large);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+.icons > a > svg {
+  color: var(--background-secondary);
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 5rem 0 0;
+  }
+
+  .header__content {
+    flex-direction: column;
+  }
+}

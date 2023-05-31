@@ -1,0 +1,33 @@
+@import '../../styles/_var.module.css';
+
+.container {
+  width: 100%;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.stack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 0 0;
+}
+
+.stack__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 28px #c5c5c540;
+  padding: 0.5rem;
+}

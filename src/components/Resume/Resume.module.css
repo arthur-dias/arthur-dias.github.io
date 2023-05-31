@@ -1,0 +1,42 @@
+@import '../../styles/_var.module.css';
+
+.container {
+  width: 100%;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 4rem 0 0;
+}
+
+.resume__title {
+  font-size: var(--large);
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2rem;
+  max-width: 500px;
+  padding: 0;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .jobs {
+    padding: 0 1rem;
+  }
+}

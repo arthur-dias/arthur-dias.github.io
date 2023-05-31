@@ -1,0 +1,20 @@
+@import '../../styles/_var.module.css';
+
+.toggle_switch {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 2rem 2rem 0 0;
+}
+
+input {
+  position: absolute;
+  display: none;
+}
+
+svg {
+  cursor: pointer;
+  transform: scale(2);
+}
