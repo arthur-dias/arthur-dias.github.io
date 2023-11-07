@@ -4,7 +4,7 @@ import { GiMoonBats } from 'react-icons/gi'
 import { BsSunFill } from 'react-icons/bs'
 
 const Switch = () => {
-  const [theme, handleChange] = useTheme('light')
+  const [theme, handleChange] = useTheme('dark')
 
   return (
     <div className={styles.toggle_switch}>

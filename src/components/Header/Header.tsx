@@ -8,7 +8,7 @@ const Header = () => {
       <div className={styles.header}>
         <img src={Avatar} alt='Avatar' />
         <div className={styles.header__content}>
-          <p>Arthur Dias - Dev Front-end</p>
+          <p>Arthur Dias - Front end Dev</p>
           <div className={styles.icons}>
             <a
               href='https://github.com/arthur-dias/'

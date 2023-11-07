@@ -5,8 +5,8 @@ import styles from './PersonalProjects.module.css'
 interface PersonalProjects {
   project_name: string
   project_description: string
-  project_website: string
-  projetc_repo: string
+  project_website?: string
+  project_repo: string
 }
 const PersonalProjects = () => {
   return (
@@ -19,7 +19,7 @@ const PersonalProjects = () => {
               project_name,
               project_description,
               project_website,
-              projetc_repo,
+              project_repo,
             }: PersonalProjects) => (
               <li className={styles.project} key={project_name}>
                 <p>
@@ -27,10 +27,12 @@ const PersonalProjects = () => {
                 </p>
                 <p>{project_description}</p>
                 <div className={styles.project__links}>
-                  <a href={project_website} target='_blank' rel='noreferrer'>
-                    <VscLink />
-                  </a>
-                  <a href={projetc_repo} target='_blank' rel='noreferrer'>
+                  {project_website ? (
+                    <a href={project_website} target='_blank' rel='noreferrer'>
+                      <VscLink />
+                    </a>
+                  ) : null}
+                  <a href={project_repo} target='_blank' rel='noreferrer'>
                     <VscGithubAlt />
                   </a>
                 </div>
