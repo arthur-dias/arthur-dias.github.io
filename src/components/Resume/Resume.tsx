@@ -1,5 +1,13 @@
 import { resume } from '../../data/data'
 import styles from './Resume.module.css'
+
+interface Job {
+  company_name: string
+  company_location: string
+  job_duration: string
+  job_title: string
+  job_description: string
+}
 const Resume = () => {
   return (
     <div className={styles.container}>
@@ -13,13 +21,7 @@ const Resume = () => {
               job_duration,
               job_title,
               job_description,
-            }: {
-              company_name: string
-              company_location: string
-              job_duration: string
-              job_title: string
-              job_description: string
-            }) => (
+            }: Job) => (
               <li className={styles.job} key={company_name}>
                 <p>
                   <strong>{company_name}</strong> - {company_location} -{' '}
