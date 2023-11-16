@@ -1,4 +1,3 @@
-import { VscGithubAlt, VscLink } from 'react-icons/vsc'
 import { personalProjects } from '../../data/data'
 import styles from './PersonalProjects.module.css'
 
@@ -18,24 +17,15 @@ const PersonalProjects = () => {
             ({
               project_name,
               project_description,
-              project_website,
               project_repo,
             }: PersonalProjects) => (
               <li className={styles.project} key={project_name}>
-                <p>
-                  <strong>{project_name}</strong>
+                <a href={project_repo} target='_blank' rel='noreferrer'>
+                  <p className={styles.project__title}>{project_name}</p>
+                </a>
+                <p className={styles.project__description}>
+                  {project_description}
                 </p>
-                <p>{project_description}</p>
-                <div className={styles.project__links}>
-                  {project_website ? (
-                    <a href={project_website} target='_blank' rel='noreferrer'>
-                      <VscLink />
-                    </a>
-                  ) : null}
-                  <a href={project_repo} target='_blank' rel='noreferrer'>
-                    <VscGithubAlt />
-                  </a>
-                </div>
               </li>
             )
           )}

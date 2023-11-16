@@ -23,12 +23,16 @@ const Resume = () => {
               job_description,
             }: Job) => (
               <li className={styles.job} key={company_name}>
-                <p>
-                  <strong>{company_name}</strong> - {company_location} -{' '}
-                  {job_duration}
-                </p>
-                <p>{job_title}</p>
-                <p>{job_description}</p>
+                <p>{job_duration}</p>
+                <div>
+                  <p>
+                    <strong>{company_name}</strong> - {company_location}
+                  </p>
+                  <p>
+                    <em>{job_title}</em>
+                  </p>
+                  <p className={styles.job__description}>{job_description}</p>
+                </div>
               </li>
             )
           )}

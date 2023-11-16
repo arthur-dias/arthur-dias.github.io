@@ -1,19 +1,17 @@
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import PersonalProjects from './components/PersonalProjects/PersonalProjects'
-import Presentation from './components/Presentation/Presentation'
-import Resume from './components/Resume/Resume'
 import Switch from './components/Switch/Switch'
+import Header from './components/Header/Header'
+import Contact from './components/Contact/Contact'
+import Resume from './components/Resume/Resume'
+import PersonalProjects from './components/PersonalProjects/PersonalProjects'
 
 function App() {
   return (
     <div className='container'>
       <Switch />
       <Header />
-      <Presentation />
+      <Contact />
       <Resume />
       <PersonalProjects />
-      <Footer />
     </div>
   )
 }

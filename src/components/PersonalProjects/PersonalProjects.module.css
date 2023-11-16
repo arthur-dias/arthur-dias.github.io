@@ -7,14 +7,17 @@
 .personalProjects {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   padding: 4rem 0 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .personalProjects__title {
   font-size: var(--large);
+  font-weight: 500;
 }
 
 .projects {
@@ -23,7 +26,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   gap: 2rem;
-  max-width: 700px;
+  max-width: 600px;
   padding: 0;
 }
 
@@ -34,23 +37,22 @@
   justify-content: flex-start;
   gap: 0.5rem;
 }
-
-.project__links {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  padding-top: 1rem;
-  justify-content: center;
+.project__title {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
 }
 
-.project__links > a {
+.project > a {
   text-decoration: none;
-  color: var(--background-secondary);
+  color: var(--text-primary);
+}
+.project__description {
+  color: var(--text-secondary);
 }
 
 @media (max-width: 600px) {
-  .projects {
-    padding: 0 1rem;
+  .projects,
+  .personalProjects__title {
+    padding: 0 1rem 3rem;
   }
 }
