@@ -10,7 +10,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-  padding: 4rem 0 0;
+  padding: 4rem 0 2rem;
   max-width: 600px;
   margin: 0 auto;
 }
